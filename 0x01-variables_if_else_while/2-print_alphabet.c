@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include <unistd.h>
 /**
  * main - Entry point
@@ -8,6 +8,7 @@ nclude <stdio.h>
 int main(void)
 {
 	int ch;
+
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
