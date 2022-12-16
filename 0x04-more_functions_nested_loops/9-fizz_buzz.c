@@ -2,40 +2,32 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students
- * Retrun: void
+ * main - print numbers 1 - 100 followed by a new line
+ * numbers that are multiples of 3 print Fizz
+ * numbers that are multiples of 5 print Buzz
+ * numbers that are multiples of 3 n 5 print FizzBuzz
+ * each number and word to be separated by space
+ * Retrun: 0
  */
 int main(void)
 {
-	int i = 1;
+	int num;
 
-	while (i <= 100)
+	for (num = 1; num <= 100; ++num)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if (i % 5 == 0)
-		{
-			if (i == 100)
-			{
-				printf("Buzz");
-			}
-			else if (i != 100)
-			{
-				printf("Buzz ");
-			}
-		}
+		if (num % 3 == 0 && !(num % 5 == 0))
+			printf("Fizz");
+		else if (num % 5 == 0 && !(num % 3 == 0))
+			printf("Buzz");
+		else if (num % 3 == 0 && num % 5 == 0)
+			printf("FizzBuzz");
 		else
-		{
-			printf("%d ", i);
-		}
-		i++;
+			printf("%d", num);
+
+		if (num != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
-	printf("\n");
 	return (0);
 }
