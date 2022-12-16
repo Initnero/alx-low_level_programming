@@ -30,8 +30,7 @@ void more_numbers(void)
 				_putchar(id + '0');
 				id++;
 			}
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
-	return (0);
 }
