@@ -1,36 +1,25 @@
 #include "main.h"
 
 /**
- * more_numbers - check the code for Holberton School students
+ * more_numbers - a function that prints 10 times the numbers, from 0 to 14
+ * _putchar only 3 times
  * Return: void
  */
 void more_numbers(void)
 {
-	int count, i, changer, id;
+	int i, ro;
 
-	count = 0;
-	id = 0;
-	while (count < 10)
+	for (ro = 0; ro < 10; ro++)
 	{
-		i = 0;
 		for (i = 0; i <= 14; i++)
 		{
-			changer = i;
-			if (i < 10)
+			if (i >= 10)
 			{
-				changer = i;
+				_putchar((i / 10) + '0');
 			}
-			else
-			{
-				changer = 1;
-			}
-			_putchar(changer + '0');
-			if (i > 9)
-			{
-				_putchar(id + '0');
-				id++;
-			}
-			_putchar('\n');
+			_putchar((i % 10) + '0');
 		}
+		_putchar('\n');
 	}
+
 }

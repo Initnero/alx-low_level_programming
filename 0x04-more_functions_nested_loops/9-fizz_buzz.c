@@ -3,10 +3,9 @@
 
 /**
  * main - print numbers 1 - 100 followed by a new line
- * numbers that are multiples of 3 print Fizz
- * numbers that are multiples of 5 print Buzz
- * numbers that are multiples of 3 n 5 print FizzBuzz
- * each number and word to be separated by space
+ * 3 multiples print Fizz instead of the number
+ * 5 multiples print Buzz instead of the number
+ * 3 & 5 multiples print FizzBuzz instead of the number
  * Retrun: 0
  */
 int main(void)
