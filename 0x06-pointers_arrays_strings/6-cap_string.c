@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * cap_string - ...
+ * @s: ...
+ *
+ * Return: char value
  */
 char *cap_string(char *s)
 {
